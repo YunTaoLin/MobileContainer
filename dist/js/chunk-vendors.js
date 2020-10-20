@@ -1043,7 +1043,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node-libs-browser/mock/process.js */ "./node_modules/node-libs-browser/mock/process.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node-libs-browser/mock/process.js */ "./node_modules/node-libs-browser/mock/process.js?4362")))
 
 /***/ }),
 
@@ -6937,7 +6937,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/node-libs-browser/mock/process.js":
+/***/ "./node_modules/node-libs-browser/mock/process.js?4362":
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -6982,10 +6982,55 @@ exports.features = {};
 
 /***/ }),
 
+/***/ "./node_modules/node-libs-browser/mock/process.js?90db":
+/*!****************************************************************!*\
+  !*** ../sunmai/node_modules/node-libs-browser/mock/process.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports.nextTick = function nextTick(fn) {
+    var args = Array.prototype.slice.call(arguments);
+    args.shift();
+    setTimeout(function () {
+        fn.apply(null, args);
+    }, 0);
+};
+
+exports.platform = exports.arch = 
+exports.execPath = exports.title = 'browser';
+exports.pid = 1;
+exports.browser = true;
+exports.env = {};
+exports.argv = [];
+
+exports.binding = function (name) {
+	throw new Error('No such module. (Possibly not yet loaded)')
+};
+
+(function () {
+    var cwd = '/';
+    var path;
+    exports.cwd = function () { return cwd };
+    exports.chdir = function (dir) {
+        if (!path) path = __webpack_require__(/*! path */ "./node_modules/path-browserify/index.js");
+        cwd = path.resolve(dir, cwd);
+    };
+})();
+
+exports.exit = exports.kill = 
+exports.umask = exports.dlopen = 
+exports.uptime = exports.memoryUsage = 
+exports.uvCounters = function() {};
+exports.features = {};
+
+
+/***/ }),
+
 /***/ "./node_modules/path-browserify/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/path-browserify/index.js ***!
-  \***********************************************/
+/*!*******************************************************!*\
+  !*** ../sunmai/node_modules/path-browserify/index.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7292,7 +7337,7 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ "./node_modules/node-libs-browser/mock/process.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ "./node_modules/node-libs-browser/mock/process.js?90db")))
 
 /***/ }),
 
@@ -30866,9 +30911,9 @@ var index = {
 /***/ }),
 
 /***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
+/*!************************************************!*\
+  !*** ./node_modules/webpack/buildin/global.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/MobileContainer/dist/";
 /******/
 /******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
@@ -1434,7 +1434,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
-var ApiBaseUrl = Object({"NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_ApiBaseUrl + "";
+var ApiBaseUrl = Object({"NODE_ENV":"development","VUE_APP_CLI_UI_URL":"","BASE_URL":"/MobileContainer/dist/"}).VUE_APP_ApiBaseUrl + "";
 var Config = {
   headers: {
     "Content-Type": "application/json"
@@ -1508,14 +1508,14 @@ var ShowError = function ShowError() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.object.assign.js */ "./node_modules/core-js/modules/es.object.assign.js");
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.promise.finally.js */ "./node_modules/core-js/modules/es.promise.finally.js");
-/* harmony import */ var C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_sunmai_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.object.assign.js */ "./node_modules/core-js/modules/es.object.assign.js");
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_object_assign_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/core-js/modules/es.promise.finally.js */ "./node_modules/core-js/modules/es.promise.finally.js");
+/* harmony import */ var C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(C_Users_JoeLin_Desktop_Sunmai_node_modules_core_js_modules_es_promise_finally_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
 /* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./App.vue */ "./src/App.vue");
 /* harmony import */ var _router_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./router.js */ "./src/router.js");
@@ -1590,10 +1590,10 @@ var routes = [{
   name: "test2",
   component: _views_test2_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
 }];
-console.log("/");
+console.log("/MobileContainer/dist/");
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: "history",
-  base: "/",
+  base: "/MobileContainer/dist/",
   routes: routes
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
