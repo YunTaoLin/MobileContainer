@@ -52,14 +52,14 @@ export default {
       var disXY = Math.abs(direction) > Math.abs(directionY);
       if (
         disXY &&
-        direction >= 200 &&
+        direction >= 160 &&
         nowRouteIndex < this.tabList.length - 1
       ) {
         //向左移動
         this.slideDirection = "slideforward";
         this.$router.push({ path: this.tabList[nowRouteIndex + 1].path });
       }
-      if (disXY && direction < -200 && nowRouteIndex > 0) {
+      if (disXY && direction < -160 && nowRouteIndex > 0) {
         //向右移動
         this.slideDirection = "slideback";
         this.$router.push({ path: this.tabList[nowRouteIndex - 1].path });
@@ -135,7 +135,7 @@ a {
 .slideforward-enter-active,
 .slideforward-leave-active {
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.2s;
   transform: translate3d(0px, 0px, 0px);
 }
 
@@ -145,13 +145,13 @@ a {
 }
 .slideforward-leave-to {
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.2s;
   transform: translate3d(-100%, 0px, 0px);
 }
 .slideback-enter-active,
 .slideback-leave-active {
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.2s;
   transform: translate3d(0px, 0px, 0px);
 }
 .slideback-enter {

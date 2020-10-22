@@ -332,7 +332,7 @@ __webpack_require__.r(__webpack_exports__);
       });
       var disXY = Math.abs(direction) > Math.abs(directionY);
 
-      if (disXY && direction >= 200 && nowRouteIndex < this.tabList.length - 1) {
+      if (disXY && direction >= 160 && nowRouteIndex < this.tabList.length - 1) {
         //向左移動
         this.slideDirection = "slideforward";
         this.$router.push({
@@ -340,7 +340,7 @@ __webpack_require__.r(__webpack_exports__);
         });
       }
 
-      if (disXY && direction < -200 && nowRouteIndex > 0) {
+      if (disXY && direction < -160 && nowRouteIndex > 0) {
         //向右移動
         this.slideDirection = "slideback";
         this.$router.push({
@@ -965,7 +965,7 @@ render._withStripped = true
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n* {\r\n  margin: 0;\r\n  padding: 0;\n}\nbody {\r\n  height: 100%;\r\n  width: 100%;\r\n  background-color: #fbf9fe;\n}\na {\r\n  color: #fff;\r\n  display: inline-block;\r\n  width: 100%;\r\n  height: 100%;\r\n  text-decoration: none;\n}\n.page {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\n}\n.page-tab {\r\n  display: flex;\r\n  width: 100vw;\r\n  justify-content: center;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 50;\n}\n.tab-item {\r\n  text-align: center;\r\n  align-items: center;\r\n  height: 44px;\r\n  line-height: 44px;\r\n  flex-grow: 1;\r\n  height: 100%;\r\n  background-color: #123;\n}\n.tab-item_active {\r\n  /* border-bottom: 3px solid #f90; */\n}\n.tab-item_active a {\r\n  color: #f90;\n}\n.slideforward-enter-active,\r\n.slideforward-leave-active {\r\n  position: absolute;\r\n  transition: all 0.5s;\r\n  transform: translate3d(0px, 0px, 0px);\n}\n.slideforward-enter {\r\n  position: absolute;\r\n  transform: translate3d(100%, 0px, 0px);\n}\n.slideforward-leave-to {\r\n  position: absolute;\r\n  transition: all 0.5s;\r\n  transform: translate3d(-100%, 0px, 0px);\n}\n.slideback-enter-active,\r\n.slideback-leave-active {\r\n  position: absolute;\r\n  transition: all 0.5s;\r\n  transform: translate3d(0px, 0px, 0px);\n}\n.slideback-enter {\r\n  position: absolute;\r\n  transform: translate3d(-100%, 0px, 0px);\n}\n.slideback-leave-to {\r\n  position: absolute;\r\n  transform: translate3d(100%, 0px, 0px);\n}\r\n", ""]);
+exports.push([module.i, "\n* {\r\n  margin: 0;\r\n  padding: 0;\n}\nbody {\r\n  height: 100%;\r\n  width: 100%;\r\n  background-color: #fbf9fe;\n}\na {\r\n  color: #fff;\r\n  display: inline-block;\r\n  width: 100%;\r\n  height: 100%;\r\n  text-decoration: none;\n}\n.page {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\n}\n.page-tab {\r\n  display: flex;\r\n  width: 100vw;\r\n  justify-content: center;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 50;\n}\n.tab-item {\r\n  text-align: center;\r\n  align-items: center;\r\n  height: 44px;\r\n  line-height: 44px;\r\n  flex-grow: 1;\r\n  height: 100%;\r\n  background-color: #123;\n}\n.tab-item_active {\r\n  /* border-bottom: 3px solid #f90; */\n}\n.tab-item_active a {\r\n  color: #f90;\n}\n.slideforward-enter-active,\r\n.slideforward-leave-active {\r\n  position: absolute;\r\n  transition: all 0.2s;\r\n  transform: translate3d(0px, 0px, 0px);\n}\n.slideforward-enter {\r\n  position: absolute;\r\n  transform: translate3d(100%, 0px, 0px);\n}\n.slideforward-leave-to {\r\n  position: absolute;\r\n  transition: all 0.2s;\r\n  transform: translate3d(-100%, 0px, 0px);\n}\n.slideback-enter-active,\r\n.slideback-leave-active {\r\n  position: absolute;\r\n  transition: all 0.2s;\r\n  transform: translate3d(0px, 0px, 0px);\n}\n.slideback-enter {\r\n  position: absolute;\r\n  transform: translate3d(-100%, 0px, 0px);\n}\n.slideback-leave-to {\r\n  position: absolute;\r\n  transform: translate3d(100%, 0px, 0px);\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
