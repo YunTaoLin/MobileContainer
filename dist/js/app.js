@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/MobileContainer/dist/";
 /******/
 /******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
@@ -1481,7 +1481,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
-var ApiBaseUrl = Object({"NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_ApiBaseUrl + "";
+var ApiBaseUrl = Object({"NODE_ENV":"development","BASE_URL":"/MobileContainer/dist/"}).VUE_APP_ApiBaseUrl + "";
 var Config = {
   headers: {
     "Content-Type": "application/json"
@@ -1637,10 +1637,10 @@ var routes = [{
   name: "test2",
   component: _views_test2_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
 }];
-console.log("/");
+console.log("/MobileContainer/dist/");
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: "history",
-  base: "/",
+  base: "/MobileContainer/dist/",
   routes: routes
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
