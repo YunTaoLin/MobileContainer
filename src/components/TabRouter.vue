@@ -36,38 +36,42 @@ export default {
     };
   },
   methods: {
-    // touchedstartHandler(e) {
-    //   this.startX = e.changedTouches[0].pageX;
-    //   this.startY = e.changedTouches[0].pageY;
-    // },
-    // touchendHandler(e) {
-    //   let direction = this.startX - e.changedTouches[0].pageX;
-    //   let directionY = this.startY - e.changedTouches[0].pageY;
-    //   let nowRouteIndex = 0;
-    //   this.tabList.forEach((v, index) => {
-    //     if (v.path == this.nowPath) {
-    //       nowRouteIndex = index;
-    //     }
-    //   });
-    //   var disXY = Math.abs(direction) > Math.abs(directionY);
-    //   if (disXY && direction >= 0 && nowRouteIndex < this.tabList.length - 1) {
-    //     //设置向前动画
-    //     this.slideDirection = "slideforward";
-    //     this.$router.push({ path: this.tabList[nowRouteIndex + 1].path });
-    //   }
-    //   if (disXY && direction < 0 && nowRouteIndex > 0) {
-    //     //设置向后动画
-    //     this.slideDirection = "slideback";
-    //     this.$router.push({ path: this.tabList[nowRouteIndex - 1].path });
-    //   }
-    // },
-    // initTouchedEvent() {
-    //   this.$el.addEventListener(
-    //     "touchstart",
-    //     this.touchedstartHandler.bind(this)
-    //   );
-    //   this.$el.addEventListener("touchend", this.touchendHandler.bind(this));
-    // },
+    touchedstartHandler(e) {
+      this.startX = e.changedTouches[0].pageX;
+      this.startY = e.changedTouches[0].pageY;
+    },
+    touchendHandler(e) {
+      let direction = this.startX - e.changedTouches[0].pageX;
+      let directionY = this.startY - e.changedTouches[0].pageY;
+      let nowRouteIndex = 0;
+      this.tabList.forEach((v, index) => {
+        if (v.path == this.nowPath) {
+          nowRouteIndex = index;
+        }
+      });
+      var disXY = Math.abs(direction) > Math.abs(directionY);
+      if (
+        disXY &&
+        direction >= 200 &&
+        nowRouteIndex < this.tabList.length - 1
+      ) {
+        //向左移動
+        this.slideDirection = "slideforward";
+        this.$router.push({ path: this.tabList[nowRouteIndex + 1].path });
+      }
+      if (disXY && direction < -200 && nowRouteIndex > 0) {
+        //向右移動
+        this.slideDirection = "slideback";
+        this.$router.push({ path: this.tabList[nowRouteIndex - 1].path });
+      }
+    },
+    initTouchedEvent() {
+      this.$el.addEventListener(
+        "touchstart",
+        this.touchedstartHandler.bind(this)
+      );
+      this.$el.addEventListener("touchend", this.touchendHandler.bind(this));
+    },
   },
   watch: {
     $route(to, from) {

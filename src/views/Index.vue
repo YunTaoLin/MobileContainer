@@ -3,16 +3,27 @@
     <ScrollUpdate :update="reset">
       <div class="box">
         <h1>第一頁</h1>
-        <swiper id="sw" :options="swiper">
-          <swiper-slide
-            class="list-item"
-            v-for="(item, index) in dataList"
-            :key="item.title"
-          >
-            {{ index }}
-            {{ item.title }}
-          </swiper-slide>
-        </swiper>
+        <div
+          @touchstart.stop="
+            {
+            }
+          "
+          @touchmove.stop="
+            {
+            }
+          "
+        >
+          <swiper id="sw" :options="swiper">
+            <swiper-slide
+              class="list-item"
+              v-for="(item, index) in dataList"
+              :key="item.title"
+            >
+              {{ index }}
+              {{ item.title }}
+            </swiper-slide>
+          </swiper>
+        </div>
       </div>
     </ScrollUpdate>
   </div>
@@ -34,6 +45,7 @@ export default {
         // freeMode: true,
         grabCursor: true,
         centerInsufficientSlides: true,
+        touchMoveStopPropagation: true,
       },
       dataList: [
         { title: "1111111" },
@@ -42,9 +54,13 @@ export default {
       ],
     };
   },
+  mounted() {},
   methods: {
     reset() {
       console.log("好了啦");
+    },
+    touchHandler() {
+      console.log("有");
     },
   },
 };

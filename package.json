@@ -16,6 +16,7 @@
     "better-scroll": "^2.0.4",
     "core-js": "^3.6.5",
     "mescroll.js": "^1.4.2",
+    "swiper": "^6.3.4",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.2.0",
